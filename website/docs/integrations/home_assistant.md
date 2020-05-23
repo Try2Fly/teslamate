@@ -379,7 +379,7 @@ This automation triggers when the Tesla transitions from not_home to home. This 
   initial_state: on
   trigger:
     - platform: state
-      entity_id: switch.garage_door_switch
+      entity_id: device_tracker.tesla_location
       from: 'not_home'
       to: 'home'
   action:
